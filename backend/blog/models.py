@@ -5,18 +5,20 @@ from django.db import models
 class Category(models.Model):
   name = models.CharField(max_length=30)
 
+  def __str__(self): 
+		  return self.name
+
 class Post(models.Model):
   title = models.CharField(max_length=200)
+  first_text = models.TextField(max_length=1000, null=True, blank=True)
+  second_text = models.TextField(max_length=1000, null=True, blank=True)
+  third_text = models.TextField(max_length=1000, null=True, blank=True)
+  fourth_text = models.TextField(max_length=1000, null=True, blank=True)
+  five_text = models.TextField(max_length=1000, null=True, blank=True)
+  categories = models.ManyToManyField("Category", related_name="posts")
   created_at = models.DateTimeField(auto_now_add=True)
   country = models.CharField(max_length=50)
   main_image = models.ImageField(null=True, blank=True, upload_to="uploads/")
-  main_description = models.TextField(null=True, blank=True)
-  h1_title = models.CharField(max_length=70)
-  h1_image = models.ImageField(null=True, blank=True, upload_to="uploads/")
-  h2_title = models.CharField(max_length=70)
-  h2_description = models.CharField(max_length=200)
-  h2_image = models.ImageField(null=True, blank=True, upload_to="uploads/")
-  h3_title = models.CharField(max_length=70)
-  h3_description = models.CharField(max_length=200)
-  h3_image = models.ImageField(null=True, blank=True, upload_to="uploads/")
-  categories = models.ManyToManyField("Category", related_name="posts")
+  
+  def __str__(self): 
+		  return self.title
