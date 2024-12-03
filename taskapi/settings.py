@@ -79,7 +79,7 @@ DATABASES = {
 
 # postgresql://store_4sxy_user:O7lTfX7CadYyQjsj6uUxzGBA9XZkU4aQ@dpg-csvjhvm8ii6s73eu5qu0-a.oregon-postgres.render.com/store_4sxy
 # database_url = os.environ.get("DATABASE_URL")
-DATABASES['default'] = dj_database_url.parse("postgresql://store_4sxy_user:O7lTfX7CadYyQjsj6uUxzGBA9XZkU4aQ@dpg-csvjhvm8ii6s73eu5qu0-a.oregon-postgres.render.com/store_4sxy")
+# DATABASES['default'] = dj_database_url.parse("postgresql://store_4sxy_user:O7lTfX7CadYyQjsj6uUxzGBA9XZkU4aQ@dpg-csvjhvm8ii6s73eu5qu0-a.oregon-postgres.render.com/store_4sxy")
 
 
 
