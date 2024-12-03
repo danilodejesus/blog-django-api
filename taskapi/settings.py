@@ -18,7 +18,7 @@ SECRET_KEY = "django-insecure-*_izax9$5b5uv*-6v^4(r0_9$f+7c_kzb6z(y%n^(+4lu$2%!l
 DEBUG = True
 
 # ALLOWED_HOSTS = os.environ.get("ALLOWED_HOSTS").split(" ")
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['blog-django-api-1.onrender.com']
 
 
 # Application definition
