@@ -18,8 +18,13 @@ SECRET_KEY = "django-insecure-*_izax9$5b5uv*-6v^4(r0_9$f+7c_kzb6z(y%n^(+4lu$2%!l
 DEBUG = True
 
 # ALLOWED_HOSTS = os.environ.get("ALLOWED_HOSTS").split(" ")
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = ["127.0.0.1", "https://blog-django-api-1.onrender.com",]
+CORS_ORIGIN_ALLOW_ALL = False
 
+CORS_ORIGIN_WHITELIST = [
+    '127.0.0.1',
+    'https://blog-django-api-1.onrender.com'
+]
 
 # Application definition
 
@@ -137,5 +142,5 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
-    "http://localhost:3001",
+    "https://nord-andes.web.app",
 ]
